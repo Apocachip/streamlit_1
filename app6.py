@@ -1,3 +1,4 @@
+from email import message
 import streamlit as st
 
 def main() :
@@ -32,7 +33,7 @@ def main() :
     st.write(my_date.strftime('%A'))
 
     # 7. 시간 입력
-    my_time = st.color_picker('시간 입력')
+    my_time = st.time_input('시간 입력')
     st.write(my_time)
 
     # 8. 색 입력
@@ -45,4 +46,5 @@ def main() :
 
 
 if __name__ == '__main__' :
+    print('__name__')
     main()
